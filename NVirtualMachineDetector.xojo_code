@@ -234,7 +234,7 @@ Protected Class NVirtualMachineDetector
 		    static SB_JOEBOX as string = "55274-640-2673064-23950"
 		    
 		    try
-		      dim registry_item as new RegistryItem( "HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion"
+		      dim registry_item as new RegistryItem( "HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion" )
 		      
 		      if WinRegistrySearch( registry_item, "PackageMoniker", "Syste", 0 ) then
 		        mIsSandboxed = true
